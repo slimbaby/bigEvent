@@ -45,7 +45,7 @@
           <td>{{$value.alias}}</td>
           <td>
             <button type="button" class="layui-btn layui-btn-xs btn-edit" data-id="{{$value.Id}}">编辑</button>
-            <button type="button" class="layui-btn layui-btn-danger layui-btn-xs">删除</button>
+            <button type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete" data-id="{{$value.Id}}">删除</button>
           </td>
         </tr>
         {{/each}}
@@ -74,7 +74,6 @@
           </div>
         </form>
       </script>
-
     <!-- 又是一个数据模板  -->
     <script type="text/html" id="dialog-edit">
         <form class="layui-form" id="form-edit" lay-filter="form-edit">
